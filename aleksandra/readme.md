@@ -1,1 +1,2 @@
 Pozdrav!! :) 
+vezba-konflikt
