@@ -1,2 +1,2 @@
 ### Greetings from Dusan
-Igramo se!
+Resavanje konfilkta!

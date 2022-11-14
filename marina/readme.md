@@ -1,7 +1,6 @@
-### Pozdrav, Petar ovde
+### Pozdrav, ja sam Marina
 vezba-konflikt
 ~ Hello, Petar made a conflict.
-kjahsbdkajsbd
+zxcxzdqwervwejhcewqbd
 Stvaramo haos! :) 
-Marina was here.
-
+Marina svrlja .
