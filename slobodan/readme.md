@@ -4,3 +4,4 @@ vezba-konflikt
 
 Stvaramo haos! :) 
 Cao cao Slobo .
+haos
