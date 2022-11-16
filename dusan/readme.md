@@ -1,2 +1,8 @@
 ### Greetings from Dusan
-Resavanje konfilkta!
+vezba-konflikt
+~ Hello, Petar made a conflict.
+zxczxc
+We create chaos!! :)
+Marina was here.
+
+haos

@@ -5,3 +5,4 @@ dada.
 Stvaramo haos! :) 
 Rekao Pera da napisemo smislenu recenicu.
 
+haos
