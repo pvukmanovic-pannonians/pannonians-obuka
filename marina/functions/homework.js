@@ -1,9 +1,6 @@
 /* Our homework was to create functions for arithmetic operations, use them in the file and then console.log results.
  Every function needs to accept 2 parameters */
 
-let number1;
-let number2;
-
 // addition (+) //
 
 const addition = (number1, number2) => {
