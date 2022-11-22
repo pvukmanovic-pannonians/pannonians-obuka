@@ -13,14 +13,6 @@ Every function needs to accept 2 params.
 %
 */
 
-//The basic step is to define the two numbers that we will use in the functions. 
-//We will do this by assigning them to variables. 
-//I used 'let' because the numbers can be different. Also I could use 'var'. 
-//*The difference between 'let' and 'var' we will learn during this course. 
-
-let a;
-let b; 
-
 //First operation is the addition. A simple mathematical operation of adding one number to another. 
 
 const add = (a, b) => {
