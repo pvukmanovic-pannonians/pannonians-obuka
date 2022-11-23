@@ -1,16 +1,16 @@
+// This is homework from 21-11-2022 JS class. We learned about promises and async functions. 
+
+/* 
+The task was to: 
+Calculate results in an async function after waiting a given duration. 
+Use only functions for addition and substraction. 
+All promises must be resolved before consol.log-ing all results. 
+*/
+
 const wait = (duration, odgovor) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(odgovor);
-          //reject("GreSkA!");
-        }, duration);
-    });
-};
-
-const wait2 = (duration, odgovor2) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve(odgovor2);
           //reject("GreSkA!");
         }, duration);
     });
@@ -25,13 +25,11 @@ const substraction = (a, b) => {
 };
 
 async function main() {
-    const add = addition(3, 5);
-    const sub = substraction(3, 5);
+    const add = await wait(2000, addition(3, 5));
+    const sub = await wait(1000, substraction(3, 5));
 
-    const [f1, f2] = await Promise.all([add, sub]);
-
-    console.log("The results of the additions and substractions two number in the same time: ", f1, "i", f2, ".");
+    console.log("Results are displayed at the same time: addition:",add,", substraction:",sub,".");
+    //Results are shown after all promises were made, which means after the bigger duration pass.
 };
 
 main();
-
