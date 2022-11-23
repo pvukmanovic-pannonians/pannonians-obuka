@@ -1,11 +1,11 @@
-// This file is related to homework from 21-11-2022
-/*
-The following needs to be done:
-Calculator results in an async function after waiting a given duration. Use only functions for:
-Addition
-Subtraction
-All promises must be resolved before console.log-ing all results. 
-*/
+// // This file is related to homework from 21-11-2022
+// /*
+// The following needs to be done:
+// Calculator results in an async function after waiting a given duration. Use only functions for:
+// Addition
+// Subtraction
+// All promises must be resolved before console.log-ing all results. 
+// */
 
 const plus = (a, b) => {
     return a + b;
@@ -27,3 +27,6 @@ delay(2000).then((response) => {
     const resultMinus = minus (22, 12);
     console.log("Sum = " + resultPlus + " ||||||| " + "Result substract = " + resultMinus);
 });
+
+// Example 2 (After Petar's remarks)
+
