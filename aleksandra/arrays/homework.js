@@ -70,14 +70,17 @@ console.log("Is 'petar.vukmanovic@pannonians.com' included in our list:", team.i
 //remove her and place her at the end of the list.
 //To complete all of this we will use several methods. 
 
-team.splice(team.indexOf("milana.dokic.021@gmail.com"), 1);
-console.log("Our list without 'milana.dokic.021@gmail.com':", team);
+const subject = 'milana.dokic.021@gmail.com';
 
-//We found out what position that is 'milana.dokic.021@gmail.com' by method indexOf.
-//To remove 'milana.dokic.021@gmail.com' from our list we use method splice. 
+const subjectTarget = team.splice(team.indexOf(subject), 1);
+const milana = subjectTarget[0];
+console.log("Our list without subject:", team);
 
-team.splice(team.length, 0, 'milana.dokic.021@gmail.com');
-console.log("Our list with 'milana.dokic.021@gmail.com' at the end:", team);
+//We found out what position that is subject by method indexOf.
+//To remove subject from our list we use method splice. 
+
+team.splice(team.length, 0, milana);
+console.log("Our list with subject at the end:", team);```
 
 //One more application of the splice method is to insert an element into an array. 
 //In this case, the first parameter is always the position we insert (in our case .length, because we insert at the end of array), 
