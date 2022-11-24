@@ -15,7 +15,7 @@ const subtraction = (a, b) => a - b;
 
 async function main() {
   const answeradd = await wait(3000, addition(2, 2));
-  const answersub = await (wait, subtraction(10, 3));
+  const answersub = await wait (3000, subtraction(10, 3));
 
   console.log("Answers are simultaneously shown after 3 seconds wait");
   console.log("Answer for addition is: ", answeradd);
