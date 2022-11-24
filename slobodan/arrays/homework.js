@@ -48,13 +48,15 @@ console.log('');
 
 //I'll check on witch position in this array is milana.dokic.021@gmail.com//
 
-console.log('Lets find on witch position in array is Milana Dokic' , team.indexOf('milana.dokic.021@gmail.com'));
+const indexOfMilana = team.indexOf('milana.dokic.021@gmail.com')
+
+console.log('Lets find on witch position in array is Milana Dokic' , indexOfMilana);
 
 console.log('');
 
 //I'll splice out milana from array//
 
-team.splice(5,1);
+const milana = team.splice(indexOfMilana,1)[0];
 
 console.log('now we will splice out Milana Dokic from team' , team);
 
@@ -68,7 +70,7 @@ console.log('');
 
 //Use splice again from the last string in arrey with secound param 0 so we will not delete any, and splice in milana again at the and of array//
 
-team.splice(10,0,"milana.dokic.021@gmail.com");
+team.splice(10,0,milana);
 
 console.log('We will show that splice can put Milana Dokic back at the end of array' , team);
 
