@@ -1,0 +1,40 @@
+{
+  "name": "pannonians-obuka",
+  "version": "1.0.0",
+  "description": "Hey folks! Pannonians folks here, we'll be your guide here throughout this JavaScript journey.",
+  "main": "index.js",
+  "scripts": {
+    "acajeremic": "yarn workspace acajeremic",
+    "aleksandar": "yarn workspace aleksandar",
+    "aleksandra": "yarn workspace aleksandra",
+    "dusan": "yarn workspace dusan",
+    "jelena": "yarn workspace jelena",
+    "kristijan": "yarn workspace kristijan",
+    "marina": "yarn workspace marina",
+    "milana": "yarn workspace milana",
+    "ognjen": "yarn workspace ognjen",
+    "petar": "yarn workspace petar",
+    "slobodan": "yarn workspace slobodan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@obuka.github.com:pvukmanovic-pannonians/pannonians-obuka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./acajeremic",
+    "./aleksandar",
+    "./aleksandra",
+    "./dusan",
+    "./jelena",
+    "./kristijan",
+    "./marina",
+    "./milana",
+    "./ognjen",
+    "./petar",
+    "./slobodan"
+  ]
+}

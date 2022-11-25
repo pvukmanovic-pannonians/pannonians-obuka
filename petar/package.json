@@ -1,0 +1,27 @@
+{
+  "name": "petar",
+  "version": "1.0.0",
+  "description": "vezba-konflikt ~ Hello, Petar made a conflict. kjahsbdkajsbd Stvaramo haos! :)  Marina was here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "arrays": "yarn workspace arrays",
+    "fetch": "yarn workspace fetch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./arrays",
+    "./async_functions",
+    "./comments",
+    "./fetch",
+    "./functions",
+    "./non_primitive_types",
+    "./npm",
+    "./primitive_types",
+    "./strings",
+    "./variables"
+  ]
+}
