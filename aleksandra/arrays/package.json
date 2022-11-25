@@ -1,0 +1,14 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homework_two.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index_two.js",
+    "homework_two": "node homework_two.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
