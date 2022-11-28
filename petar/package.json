@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "arrays": "yarn workspace arrays",
-    "fetch": "yarn workspace fetch"
+    "fetch": "yarn workspace fetch",
+    "loops": "yarn workspace loops"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "./npm",
     "./primitive_types",
     "./strings",
-    "./variables"
+    "./variables",
+    "loops"
   ]
 }
