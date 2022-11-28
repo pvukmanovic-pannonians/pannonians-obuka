@@ -1,0 +1,13 @@
+{
+  "name": "async_functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node.index.js",
+    "homework": "node homework.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

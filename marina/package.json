@@ -1,0 +1,35 @@
+{
+  "name": "marina",
+  "version": "1.0.0",
+  "description": "vezba-konflikt ~ Hello, Petar made a conflict. zxcxzdqwervwejhcewqbd Stvaramo haos! :)  Marina svrlja . haos",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "arrays": "yarn workspace arrays",
+    "comments": "yarn workspace comments",
+    "fetch": "yarn workspace fetch",
+    "functions": "yarn workspace functions",
+    "non_primitive_types": "yarn workspace non_primitive_types",
+    "npm": "yarn workspace npm",
+    "primitive_types": "yarn workspace primitive_types",
+    "promise_and_async_functions": "yarn workspace promise_and_async_functions",
+    "strings": "yarn workspace strings",
+    "variables": "yarn workspace variables"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./arrays",
+    "./comments",
+    "./fetch",
+    "./functions",
+    "./non_primitive_types",
+    "./npm",
+    "./primitive_types",
+    "./promise_and_async_functions",
+    "./strings",
+    "./variables"
+  ]
+}

@@ -2,3 +2,10 @@
 # yarn lockfile v1
 
 
+"marina@file:/home/marina/development/pannonians-obuka/marina":
+  "resolved" "file:marina"
+  "version" "1.0.0"
+
+"petar@file:/home/marina/development/pannonians-obuka/petar":
+  "resolved" "file:petar"
+  "version" "1.0.0"
