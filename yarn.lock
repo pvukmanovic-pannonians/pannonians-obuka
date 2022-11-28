@@ -2,3 +2,10 @@
 # yarn lockfile v1
 
 
+"petar@file:/home/slobodan/dev/obuka/pannonians-obuka/petar":
+  "resolved" "file:petar"
+  "version" "1.0.0"
+
+"slobodan@file:/home/slobodan/dev/obuka/pannonians-obuka/slobodan":
+  "resolved" "file:slobodan"
+  "version" "1.0.0"
