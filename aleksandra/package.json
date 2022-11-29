@@ -1,0 +1,35 @@
+{
+  "name": "aleksandra",
+  "version": "1.0.0",
+  "description": "Pozdrav!! :)  ~ Hello, Petar made a conflict. asdasd Pozdrav, Marina je bila ovde. haos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "arrays": "yarn workspace arrays", 
+    "comments": "yarn workspace comments",  
+    "fetch": "yarn workspace fetch",  
+    "functions": "yarn workspace functions",  
+    "non_primitive_types": "yarn workspace non_primitive_types",  
+    "npm": "yarn workspace npm", 
+    "primitive_types": "yarn workspace primitive_types", 
+    "promise_and_async_functions": "yarn workspace promise_and_async_functions", 
+    "strings": "yarn workspace strings", 
+    "variables": "yarn workspace variables" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC", 
+  "private": true,
+  "workspaces": [
+    "./arrays", 
+    "./comments", 
+    "./fetch",
+    "./functions",
+    "./non_primitive_types",
+    "./npm",
+    "./primitive_types",
+    "./promise_and_async_functions",
+    "./strings",
+    "./variables"
+  ]
+}
