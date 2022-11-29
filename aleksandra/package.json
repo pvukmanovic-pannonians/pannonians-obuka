@@ -15,7 +15,8 @@
     "promise_and_async_functions": "yarn workspace promise_and_async_functions", 
     "strings": "yarn workspace strings", 
     "variables": "yarn workspace variables", 
-    "loops": "yarn workspace loops"
+    "loops": "yarn workspace loops", 
+    "tasks": "yarn workspace tasks"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +33,7 @@
     "./promise_and_async_functions",
     "./strings",
     "./variables", 
-    "./loops"
+    "./loops", 
+    "./tasks"
   ]
 }

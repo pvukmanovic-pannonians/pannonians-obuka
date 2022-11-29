@@ -1,0 +1,12 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task_one.js",
+  "scripts": {
+    "task_one": "node task_one.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

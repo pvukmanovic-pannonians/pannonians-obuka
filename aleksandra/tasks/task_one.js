@@ -26,6 +26,22 @@ Raw denim kinfolk cray ascot keytar coloring book post-ironic tumeric trust fund
 
 /** SECTION:  Work area */
 
-// Your answer here. Delete this comment.
+const countChars = testCharacterFrequency => {
+    const rs = {}
+    for (let ch of testCharacterFrequency) {
+        if (ch) rs[ch] = rs[ch] + 1|| 1;
+    }
+    return rs;
+};
+
+// We have created a function that is actually a solution to the task. 
+// After that, we'll just call her to 'console.log' for writing. 
+// The function takes as a parameter the string we are testing. 
+// In the code block we first instantiated the variable 'rs' which is an empty object. 
+// We passed each character in the string through the for loop, 
+// and through the if loop we return it - if there is a character, 
+// we return that character as a key, and its number of repetitions as a value (each time increased by one).
+
+console.log("Our object of frequency is:",countChars(testCharacterFrequency));
 
 /** !SECTION */
