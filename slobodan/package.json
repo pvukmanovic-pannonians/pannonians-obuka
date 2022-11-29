@@ -1,0 +1,35 @@
+{
+  "name": "slobodan",
+  "version": "1.0.0",
+  "description": "Cao ja sam Slobodan Novakovic vezba-konflikt ~ Hello, Petar made a conflict.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "arrays": "yarn workspace arrays",
+    "async_functions": "yarn workspace async_functions",
+    "comments": "yarn workspace comments",
+    "fetch": "yarn workspace fetch",
+    "functions": "yarn workspace functions",
+    "non_primitive_types": "yarn workspace non_primitive_types",
+    "npm": "yarn workspace npm",
+    "primitive_types": "yarn workspace primitive_types",
+    "strings": "yarn workspace strings",
+    "variables": "yarn workspace variables"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": "true",
+  "workspaces": [
+    "./arrays",
+    "./async_functions",
+    "./comments",
+    "./fetch",
+    "./functions",
+    "./non_primitive_types",
+    "./npm",
+    "./primitive_types",
+    "./strings",
+    "./variables"
+  ]
+}
