@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "index_two": "node index_two.js"
-    "homework": "node homework.js"
+    "index_two": "node index_two.js", 
+    "homework": "node homework.js", 
     "homework_two": "node homework_two.js"
  },
   "keywords": [],

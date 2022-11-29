@@ -1,0 +1,67 @@
+Arguments: 
+  /home/aleksandra/.nvm/versions/node/v14.21.1/bin/node /home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/yarn/lib/cli.js workspace loops start
+
+PATH: 
+  /tmp/yarn--1669726787407-0.3219004273305732:/home/aleksandra/pannonians-obuka/aleksandra/node_modules/.bin:/home/aleksandra/.config/yarn/link/node_modules/.bin:/home/aleksandra/pannonians-obuka/aleksandra/node_modules/.bin:/home/aleksandra/.nvm/versions/node/v14.21.1/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/npm/bin/node-gyp-bin:/home/aleksandra/.nvm/versions/node/v14.21.1/bin/node_modules/npm/bin/node-gyp-bin:/tmp/yarn--1669726787084-0.3912270379651557:/home/aleksandra/pannonians-obuka/node_modules/.bin:/home/aleksandra/.config/yarn/link/node_modules/.bin:/home/aleksandra/pannonians-obuka/node_modules/.bin:/home/aleksandra/.yarn/bin:/home/aleksandra/.nvm/versions/node/v14.21.1/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/npm/bin/node-gyp-bin:/home/aleksandra/.nvm/versions/node/v14.21.1/bin/node_modules/npm/bin/node-gyp-bin:/home/aleksandra/.nvm/versions/node/v14.21.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.21.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/aleksandra/pannonians-obuka/aleksandra/arrays/package.json: Unexpected string in JSON at position 232
+      at JSON.parse (<anonymous>)
+      at /home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/aleksandra/.nvm/versions/node/v14.21.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "aleksandra",
+    "version": "1.0.0",
+    "description": "Pozdrav!! :)  ~ Hello, Petar made a conflict. asdasd Pozdrav, Marina je bila ovde. haos",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1", 
+      "arrays": "yarn workspace arrays", 
+      "comments": "yarn workspace comments",  
+      "fetch": "yarn workspace fetch",  
+      "functions": "yarn workspace functions",  
+      "non_primitive_types": "yarn workspace non_primitive_types",  
+      "npm": "yarn workspace npm", 
+      "primitive_types": "yarn workspace primitive_types", 
+      "promise_and_async_functions": "yarn workspace promise_and_async_functions", 
+      "strings": "yarn workspace strings", 
+      "variables": "yarn workspace variables", 
+      "loops": "yarn workspace loops"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC", 
+    "private": true,
+    "workspaces": [
+      "./arrays", 
+      "./comments", 
+      "./fetch",
+      "./functions",
+      "./non_primitive_types",
+      "./npm",
+      "./primitive_types",
+      "./promise_and_async_functions",
+      "./strings",
+      "./variables", 
+      "./loops"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
