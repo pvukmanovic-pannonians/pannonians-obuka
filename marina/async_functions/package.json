@@ -1,17 +1,16 @@
 {
-  "name": "fetch",
+  "name": "async_functions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "homework": "node homework.js"
   },
   "keywords": [],
   "author": "",
-  "type": "module",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.2.0",
-    "lodash": "^4.17.21" 
-  }
+    "axios":"^1.2.0"
+    }
 }
