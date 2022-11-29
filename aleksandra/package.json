@@ -14,7 +14,8 @@
     "primitive_types": "yarn workspace primitive_types", 
     "promise_and_async_functions": "yarn workspace promise_and_async_functions", 
     "strings": "yarn workspace strings", 
-    "variables": "yarn workspace variables" 
+    "variables": "yarn workspace variables", 
+    "loops": "yarn workspace loops"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "./primitive_types",
     "./promise_and_async_functions",
     "./strings",
-    "./variables"
+    "./variables", 
+    "./loops"
   ]
 }
