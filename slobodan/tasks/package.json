@@ -1,0 +1,19 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "task_one": "node task_one.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type":"module",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "lodash": "^4.17.21"
+  }
+}

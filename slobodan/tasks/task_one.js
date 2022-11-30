@@ -21,6 +21,10 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 /** SECTION:  Work area */
 
-// Your answer here. Delete this comment.
-
+for (let i = 1; i < 13; i++) {
+  const multiTable = numbers.map((num) => {
+    return num * i;
+  });
+  console.log("When array numbers are multiply with " + i + " result is " + multiTable);
+}
 /** !SECTION */
