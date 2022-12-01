@@ -21,10 +21,17 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 /** SECTION:  Work area */
 
-for (let i = 1; i < 13; i++) {
-  const multiTable = numbers.map((num) => {
-    return num * i;
-  });
-  console.log("When array numbers are multiply with " + i + " result is " + multiTable);
-}
+const numbers1 = Array.from({ length: 12 }, (_, i) => ++i),
+  multX = (f) =>
+    numbers.reduce((t, x) => {
+      t[x.toString()] = x * f;
+      return t;
+    }, {});
+console.table(
+  numbers1.reduce((e, n) => {
+    e[n.toString()] = multX(n);
+    return e;
+  }, {})
+);
+
 /** !SECTION */
