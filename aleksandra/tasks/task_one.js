@@ -44,4 +44,31 @@ const countChars = testCharacterFrequency => {
 
 console.log("Our object of frequency is:",countChars(testCharacterFrequency));
 
+const obj = countChars(testCharacterFrequency);
+
+const ordered1 = Object.keys(obj)
+    .sort()
+    .reduce(
+        (acc, key) => {
+            acc[key] = obj[key];
+            return acc;
+        }, {}
+    );
+
+//console.log(ordered1);
+
+// Extra task for the task_one was to sort our result. 
+// We done that in the lines below. 
+// First we used method Object.keys() to returns an array of keys from our object. 
+// Than we used method sort() which we be abled to used because we had a array. 
+// This method sorted array for us. 
+// And finally at the end we used method forEach() to show our result. 
+// This method passed trough all elements and added to them their values. 
+
+const ordered = Object.keys(obj)
+      .sort()
+      .forEach((char, i) => {
+          console.log(char, obj[char]);
+       });
+
 /** !SECTION */
