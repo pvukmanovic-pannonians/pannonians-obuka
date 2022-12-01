@@ -1,13 +1,12 @@
 {
-  "name": "arrays",
+  "name": "async_functions",
   "version": "1.0.0",
   "description": "",
   "main": "homework.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "homework": "node homework.js",
-    "homework_two": "node homework_two.js"
+    "homework": "node homework.js"
   },
   "keywords": [],
   "author": "",
