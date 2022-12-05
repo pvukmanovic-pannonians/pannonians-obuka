@@ -14,7 +14,9 @@
     "npm": "yarn workspace npm",
     "primitive_types": "yarn workspace primitive_types",
     "strings": "yarn workspace strings",
-    "variables": "yarn workspace variables"
+    "variables": "yarn workspace variables",
+    "tasks": "yarn workspace tasks",
+    "loops": "yarn workspace loops"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +32,8 @@
     "./npm",
     "./primitive_types",
     "./strings",
-    "./variables"
+    "./variables",
+    "./tasks",
+    "./loops"
   ]
 }
