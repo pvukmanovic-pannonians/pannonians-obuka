@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "arrays": "yarn workspace arrays",
     "fetch": "yarn workspace fetch",
-    "loops": "yarn workspace loops"
+    "loops": "yarn workspace loops",
+    "react-hello-world": "yarn workspace react-hello-world"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "./primitive_types",
     "./strings",
     "./variables",
-    "loops"
+    "loops",
+    "hello-world"
   ]
 }
