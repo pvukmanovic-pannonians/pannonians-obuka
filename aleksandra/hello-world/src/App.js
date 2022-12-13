@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import Dino from './components/TextText';
 import './App.css';
+import { Background as BackgroundTwo, alertiranje} from "./components/Background";
 
 function App() {
+
+  const paragraph = "Here is some text passed from the parent component."; 
+
+  const funkcija = () => {
+    alert("Called some function");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Dino callback= {funkcija} paragraph= {paragraph}/>
+        <Dino callback= {funkcija} paragraph= "asdasdasd"/>
+        <Dino callback= {funkcija} paragraph= {123123}/>
+        <Dino callback= {funkcija} paragraph= {321321}/>
+
+        <BackgroundTwo>
+          <p>anything</p>
+          <p>anything</p>
+          <p>anything</p>
+        </BackgroundTwo>
       </header>
     </div>
   );
