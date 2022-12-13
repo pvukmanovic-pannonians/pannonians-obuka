@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const TextText = ({ paragraph, callback }) => {
   const text = "Hello World";
 
   const [broj, setBroj] = useState(Math.random() * 100);
   const [textKomponente, setTextKomponente] = useState(text);
+
+  useEffect(() => {
+    console.log("dino komponenta renderovana na ekranu");
+
+    return () => {
+      console.log("Ovde sada znamo da se dino komponenta takoreci UNMOUNT");
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("Broj se promenio");
+  }, [broj]);
 
   return (
     <>

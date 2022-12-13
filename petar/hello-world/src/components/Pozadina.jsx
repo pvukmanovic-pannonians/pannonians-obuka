@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 export const Pozadina = ({ children }) => {
+
+  useEffect(() => {
+    console.log("komponenta Pozadina renderovana na ekranu");
+  }, []);
+
   return (
     <>
       <div style={{ backgroundColor: "teal", padding: "12px 24px" }}>
