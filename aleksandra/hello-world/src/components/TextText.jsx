@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const TextText = ({ paragraph, callback}) => {
 
@@ -7,6 +7,19 @@ const TextText = ({ paragraph, callback}) => {
     const [number, setNumber] = useState(Math.random() * 100);
   
     const [textKomponente, setTextKomponente] = useState(text);
+
+    useEffect(() => {
+      console.log("Dino komponenta renederovana na ekranu ;)");
+
+
+      return () => {
+        console.log("Dino komponenta se takoreci UNMOUNT!");
+      }
+    }, []); 
+  
+    useEffect(() => {
+      console.log("Number se promenio ;)");
+    }, [number]); 
   
     return (
       <>
@@ -16,6 +29,7 @@ const TextText = ({ paragraph, callback}) => {
           onClick={() => {
             setTextKomponente(textKomponente === text ? "Changed text" : text)
             callback();
+            setNumber(Math.random() * 100);
           }} 
           type="button" 
           style={{fontSize:48}}
