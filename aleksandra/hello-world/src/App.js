@@ -1,28 +1,81 @@
-import Dino from './components/TextText';
+import { useEffect, useState } from 'react';
 import './App.css';
-import { Background as BackgroundTwo, alertiranje} from "./components/Background";
+
+function validate_mail(mail) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    return true;
+  }
+  return false;
+}
 
 function App() {
-
-  const paragraph = "Here is some text passed from the parent component."; 
-
-  const funkcija = () => {
-    alert("Called some function");
-  };
-
+  const [inputValueName, setInputValueName] = useState();
+  const [inputValueLastName, setInputValueLastName] = useState();
+  const [inputValueDateOfBirthday, setInputValueDateOfBirthday] = useState();
+  const [inputValueGender, setInputValueGender] = useState();
+  
   return (
     <div className="App">
       <header className="App-header">
-        <Dino callback= {funkcija} paragraph= {paragraph}/>
-        <Dino callback= {funkcija} paragraph= "asdasdasd"/>
-        <Dino callback= {funkcija} paragraph= {123123}/>
-        <Dino callback= {funkcija} paragraph= {321321}/>
+       <h1>Me :)</h1>
+       <form
+        onSubmit={(event) =>{
+          event.preventDefault();
+          console.log("Moje ime je:" + inputValueName);
+          console.log("Moje prezime je:" + inputValueLastName);
+          console.log("Moj datum rodjenja je:" + inputValueDateOfBirthday);
+          console.log("Moj pol je:" + inputValueGender);
+       }}>
 
-        <BackgroundTwo>
-          <p>anything</p>
-          <p>anything</p>
-          <p>anything</p>
-        </BackgroundTwo>
+       <label for="name">First name: </label>
+       <input 
+          type="text"
+          id="name"
+          placeholder="first name"
+          value={inputValueName}
+          onChange={(event) => {
+            setInputValueName(event.target.value);
+          }} 
+          style={{fontSize: 40}}
+        />
+        <br></br>
+        <label for="lastName">Last name: </label>
+        <input 
+          type="text"
+          id="lastName"
+          placeholder="last name"
+          value={inputValueLastName}
+          onChange={(event) => {
+            setInputValueLastName(event.target.value);
+          }} 
+          style={{fontSize: 40}}
+        />
+        <br></br>
+        <label for="birthday">Birthday: </label>
+        <input 
+          type="date"
+          id="birthday"
+          value={inputValueDateOfBirthday}
+          onChange={(event) => {
+            setInputValueDateOfBirthday(event.target.value);
+          }} 
+          style={{fontSize: 40}}
+        />
+        <br></br>
+        <label for="gender">Gender: </label>
+        <input 
+          type="text"
+          id="gender"
+          placeholder="male/female"
+          value={inputValueGender}
+          onChange={(event) => {
+            setInputValueGender(event.target.value);
+          }} 
+          style={{fontSize: 40}}
+        />
+        <br></br>
+        <button style={{fontSize: 40}} type="submit"> Submit</button>
+       </form>
       </header>
     </div>
   );
