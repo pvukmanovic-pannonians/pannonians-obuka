@@ -1,22 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Dino from "./components/TextText";
+import "./App.css";
+import { Pozadina as Background, alertiranje } from "./components/Pozadina";
 
 function App() {
+  const text = "Ovde neki text prosledjen iz parent komponente";
+
+  const funkcija = () => {
+    alert("Pozvana neka funkcija");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Dino callback={funkcija} paragraph={text} />
+        <Dino callback={alertiranje} paragraph="asdasdasdds" />
+        <Dino callback={funkcija} paragraph={12312321} />
+        <Dino callback={funkcija} paragraph={12312321} />
+
+        <Background>
+          <p>qweqwe</p>
+          <p>qweqwe</p>
+          <p>qweqwe</p>
+        </Background>
       </header>
     </div>
   );
