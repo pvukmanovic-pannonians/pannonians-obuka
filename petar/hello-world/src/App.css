@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  background: teal;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 24px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar li {
+  padding-right: 12px;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  min-height: 100px;
+  background: #333;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  padding: 20px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+  background-size: cover;
+  height: 50vh;
+
+  padding: 80px;
+  color: white;
 }
