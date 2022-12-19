@@ -1,26 +1,89 @@
-import Dino from './components/TextText';
-import './App.css';
-import {Pozadina as Background, alertiranje } from "./components/Pozadina";
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const text = "Ovde neki text prosledjen iz parent komponente";
-
-  const funkcija = () => {
-    alert("pozvana neka funkcija");
-  };
+  const [inputValueName, setInputValueName] = useState();
+  const [inputValueLastName, setInputValueLastName] = useState();
+  const [inputValueDateOfBirthday, setInputValueDateOfBirthday] = useState();
+  const [gender, setGender] = useState();
 
   return (
     <div className="App">
       <header className="App-header">
-         <Dino callback={funkcija}  paragraph={text}/>
-         <Dino callback={alertiranje}  paragraph="qweqwe"/>
-         <Dino callback={funkcija}  paragraph={123123321}/>
-        
-        <Background>
-         <p>qwqeqwe</p>
-         <p>qwqeqwe</p>
-         <p>qwqeqwe</p>
-        </Background>
+        <h1>Data</h1>
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            console.log("First name:" + inputValueName);
+            console.log("Last name:" + inputValueLastName);
+            console.log("Birth date:" + inputValueDateOfBirthday);
+            console.log("Gender: " + gender);
+          }}
+        >
+          <input
+            type="text"
+            id="name"
+            placeholder="first name"
+            value={inputValueName}
+            onChange={(event) => {
+              setInputValueName(event.target.value);
+            }}
+            style={{ fontSize: 20 }}
+          />
+          <br></br>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="last name"
+            value={inputValueLastName}
+            onChange={(event) => {
+              setInputValueLastName(event.target.value);
+            }}
+            style={{ fontSize: 20 }}
+          />
+          <br></br>
+          <input
+            type="date"
+            id="birthday"
+            value={inputValueDateOfBirthday}
+            onChange={(event) => {
+              setInputValueDateOfBirthday(event.target.value);
+            }}
+            style={{ fontSize: 20 }}
+          />
+          <br></br>
+          <div>
+            <h3>My gender</h3>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              onChange={(e) => setGender(e.target.value)}
+            />
+            male
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              onChange={(e) => setGender(e.target.value)}
+            />
+            female
+            <input
+              type="radio"
+              name="gender"
+              value="other :)"
+              onChange={(e) => setGender(e.target.value)}
+            />
+            other
+          </div>
+          <br></br>
+          <button
+            style={{ fontSize: 40, color: "black", background: "purple" }}
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
       </header>
     </div>
   );
