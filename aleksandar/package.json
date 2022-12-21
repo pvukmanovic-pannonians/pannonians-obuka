@@ -1,0 +1,40 @@
+{
+  "name": "aleksandar",
+  "version": "1.0.0",
+  "description": "Pozdrav, Aleksandar ovde vezba-konflikt ~ Hello, Petar made a conflict. dada. Stvaramo haos! :)  Rekao Pera da napisemo smislenu recenicu.",
+  "main": "index.js",
+  "scripts": {
+    "arrays": "yarn workspace arrays",
+    "async_functions": "yarn workspace async_functions",
+    "comments": "yarn workspace comments",
+    "fetch": "yarn workspace fetch",
+    "functions": "yarn workspace functions",
+    "non_primitive_types": "yarn workspace non_primitive_types",
+    "npm": "yarn workspace npm",
+    "primitive_types": "yarn workspace primitive_types",
+    "strings": "yarn workspace strings",
+    "variables": "yarn workspace variables",
+    "loops": "yarn workspace loops",
+    "tasks": "yarn workspace tasks",
+    "react-hello-world": "yarn workspace react-hello-world"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./arrays",
+    "./async_functions",
+    "./comments",
+    "./fetch",
+    "./functions",
+    "./non_primitive_types",
+    "./npm",
+    "./primitive_types",
+    "./strings",
+    "./variables",
+    "./loops",
+    "./tasks",
+    "./hello-world"
+  ]
+}
