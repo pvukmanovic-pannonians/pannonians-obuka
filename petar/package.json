@@ -8,7 +8,8 @@
     "arrays": "yarn workspace arrays",
     "fetch": "yarn workspace fetch",
     "loops": "yarn workspace loops",
-    "react-hello-world": "yarn workspace react-hello-world"
+    "react-hello-world": "yarn workspace react-hello-world",
+    "react-router": "yarn workspace react-router-example"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "./strings",
     "./variables",
     "loops",
-    "hello-world"
+    "hello-world",
+    "react-router-example"
   ]
 }
