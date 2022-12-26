@@ -1,22 +1,10 @@
 import { useParams } from "react-router";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { API_URL } from "../http/client";
+import useHttp from "../hooks/useHttp";
 
 export default function BlogDetails() {
   const { id } = useParams();
-  const [post, setPost] = useState();
+  const { post } = useHttp('show', id);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const { data } = await axios.get(
-      `${API_URL}/posts/${id}`
-    );
-    setPost(data);
-  };
   return (
     <div className="blog-details">
       {post && (
