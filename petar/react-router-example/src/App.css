@@ -34,3 +34,8 @@
   text-decoration: none;
   color: white;
 }
+
+.blog-details {
+  max-width: 400px;
+  margin: 0 auto;
+}
