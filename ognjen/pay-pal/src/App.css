@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.topNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navBarLink {
+  color: '#2c2e2f';
+  padding: '25px 25px 23px'; 
+  margin: '0 1px'
+}
+
+.section1 {
+  background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+  background-repeat: no-repeat;
+  height: 475px;
+  background-size: cover;
+}
+
+.section2 {
+  height: 475px;
+}
+
+.section3 {
+  height: 600px;
+  background-color: #f7f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  color: #666666;
+  border-bottom: 1px solid #666666;
+}
+
+.boldLink {
+  color: #0070ba;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabLinks {
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tabLinks li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tabContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageWrapper {
+  position: relative;
+  display: block;
+}
+
+.stepBorder {
+  border: 1px solid silver;
+  border-radius: 50%;
+}
+
+.blue {
+  color: #fff;
+  background-color: #009cde;
+  background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 0);
+}

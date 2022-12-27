@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "arrays": "yarn workspace arrays",
     "loops": "yarn workspace loops",
-    "react-hello-world": "yarn workspace react-hello-world"
+    "react-hello-world": "yarn workspace react-hello-world",
+    "pay-pal": "yarn workspace pay-pal"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   "workspaces": [
     "./arrays",
     "hello-world",
-    "loops"
+    "loops",
+    "pay-pal"
   ]
 }
