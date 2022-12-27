@@ -1,38 +1,324 @@
-.App {
-  text-align: center;
-}
+/* .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 24px 24px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-buttons {
+  padding-left: 300px;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.navbar-menu {
+  padding: 16px 8px;
+}
+
+.navbar-logo {
+  margin-right: 80px;
+}
+
+.nav-button-one {
+  background-color: white;
+  color: #008CBA;
+  border: 2px solid #008CBA; 
+  font-size: 12px;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 100px;
+}
+
+.nav-button-two {
+  background-color: #008CBA;
+  color: white;
+  border: 2px solid #008CBA; 
+  font-size: 12px;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 100px;
+}
+
+.main {
+  padding: 20px 10px;
+}
+
+.hero {
+  background-image: url('https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg');
+  background-size: cover;
+  height: 35vh;
+  padding: 80px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-button {
+  background-color: #008CBA;
+  color: white;
+  border: 2px solid #008CBA; 
+  font-size: 1.4rem;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 200px;
+  align-items: center;
+  margin-left: 650px;
+ }
+
+ .hero-button:hover{
+  background: blue;
+ }
+
+ .hero-text {
+  font-size: 48px;
+  margin-left: 300px;
+ }
+
+ .hero-text-two {
+  color: white;
+  margin-left: 550px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+ }
+
+ .text-text {
+  color: black;
+  margin-left: 500px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+ }
+
+ .panelOne-text {
+  font-size: 14px;
+ }
+
+.panelOne-list {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.panelOne-li {
+  margin-right: 40px;
+}
+
+.panelOne-button {
+  background-color: white;
+  color: #008CBA;
+  border: 2px solid #008CBA; 
+  font-size: 12px;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 100px;
+}
+
+.panelTwo {
+  background-color: rgb(241, 237, 237);
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.panelTwo-content {
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.panelTwo-text-text {
+    color: black;
+    margin-left: 550px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.panelTwo-text {
+  color: black;
+  font-size: 16px;
+}
+
+.panelTwo-list1 {
+  list-style: none;
+  display: flex;
+}
+
+.panelTwo-li1 {
+  margin-left: 400px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.panelTwo-li1a {
+  color: #008CBA;
+}
+
+.panelTwo-list2 {
+  list-style: none;
+  display: flex;
+}
+
+.panelTwo-li2 {
+  margin-right: 200px;
+}
+
+.panelTwo-button {
+  background-color: white;
+  color: #008CBA;
+  border: 2px solid #008CBA; 
+  font-size: 1.4rem;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 200px;
+  align-items: center;
+  margin-left: 430px;
+}
+
+.panelThree {
+  background-color: #1F305E;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.panelThree-content {
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.panelThree-text {
+  color: white;
+  margin-left: 200px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.panelThree-list {
+  list-style: none;
+  display: flex;
+}
+
+.panelFour {
+    background-color: rgb(241, 237, 237);
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.panelFour-text {
+  color: black;
+  margin-left: 650px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.panelFour-button {
+  background-color: #008CBA;
+  color: white;
+  border: 2px solid #008CBA; 
+  font-size: 1.4rem;
+  width: 8rem;
+  padding: 0.7rem;
+  margin: 0.3rem;
+  border-radius: 3rem;
+  width: 200px;
+  align-items: center;
+  margin-left: 750px;
+}
+
+.footer {
+  background: white;
+  color: black;
+  font-size: 18px;
+  padding: 24px 24px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-list {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  color: darkslategrey;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-list-item {
+  padding-right: 24px;
+}
+
+.footer-list-item-flag {
+  padding-left: 640px;
+  
+}
+
+.footer-image {
+  width: 24px;
+  height: auto;
+}
+
+.footer-list-second {
+  font-size: 14px;
+  padding: 0;
+  color: darkgrey;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-list-item-second {
+  padding-right: 24px;
+}
+
+.footer-list-item-second-text {
+  padding-left: 360px;
+  padding-right: 48px;
+}
+
+.footer-text {
+  color: dimgray;
+  font-size: 12px;
+}
+
+.footer-hr {
+  color: ghostwhite;
 }
