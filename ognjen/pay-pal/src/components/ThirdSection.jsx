@@ -1,6 +1,5 @@
 import { useState } from "react"
-import Tab1 from "./Tab"
-import Tab2 from "./Tab"
+import Tab from "./Tab"
 import Button from 'react-bootstrap/Button';    
 
 export default function ThirdSection ({children}) {
@@ -62,7 +61,8 @@ export default function ThirdSection ({children}) {
                     }} className={activeTab === activeTabSchema.FOR_SELLERS ? "active" : 'bold-link'}>For sellers</li>
                 </ul>
                 <div className="d-flex">
-                    {activeTab === activeTabSchema.FOR_BUYERS ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}
+                    <Tab arr={activeTab === activeTabSchema.FOR_BUYERS ? buyers : sellers}></Tab>
+                    {/* {activeTab === activeTabSchema.FOR_BUYERS ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>} */}
                 </div> 
             </div>
             <Button className='mt-5 py-3 px-5' style={{borderRadius: '30px'}} variant="outline-primary">Learn More</Button>{' '} 
