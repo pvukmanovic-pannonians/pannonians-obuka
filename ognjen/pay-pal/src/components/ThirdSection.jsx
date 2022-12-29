@@ -4,7 +4,11 @@ import Tab2 from "./Tab"
 import Button from 'react-bootstrap/Button';    
 
 export default function ThirdSection ({children}) {
-    const [activeTab, setActiveTab] = useState('ForBuyers')
+    const activeTabSchema = {
+        FOR_SELLERS: "ForSellers",
+        FOR_BUYERS: "ForBuyers"
+    }
+    const [activeTab, setActiveTab] = useState(activeTabSchema.FOR_BUYERS)
     const buyers = [
         {
             step: 1,
@@ -51,14 +55,14 @@ export default function ThirdSection ({children}) {
             <div>
                 <ul className="tab-links d-flex justify-content-center mt-4">
                     <li onClick={() => {
-                        setActiveTab('ForBuyers')
-                    }} className={activeTab === 'ForBuyers' ? "active" : 'bold-link'}>For buyers</li>
+                        setActiveTab(activeTabSchema.FOR_BUYERS)
+                    }} className={activeTab === activeTabSchema.FOR_BUYERS ? "active" : 'bold-link'}>For buyers</li>
                     <li onClick={() => {
-                        setActiveTab('ForSellers')
-                    }} className={activeTab === 'ForSellers' ? "active" : 'bold-link'}>For sellers</li>
+                        setActiveTab(activeTabSchema.FOR_SELLERS)
+                    }} className={activeTab === activeTabSchema.FOR_SELLERS ? "active" : 'bold-link'}>For sellers</li>
                 </ul>
                 <div className="d-flex">
-                    {activeTab === 'ForBuyers' ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}
+                    {activeTab === activeTabSchema.FOR_BUYERS ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}
                 </div> 
             </div>
             <Button className='mt-5 py-3 px-5' style={{borderRadius: '30px'}} variant="outline-primary">Learn More</Button>{' '} 
