@@ -5,19 +5,17 @@
   height: 70px;
 }
 
-.navBarLink {
+.nav-bar-link {
   color: '#2c2e2f';
   padding: '25px 25px 23px'; 
-  margin: '0 1px'
+  margin: '0 1px';
+  cursor: pointer;
 }
 
 .section1 {
   background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.section2 {
 }
 
 .section4-links {
@@ -42,34 +40,24 @@
   border-bottom: 1px solid #666666;
 }
 
-.boldLink {
+.bold-link {
   color: #0070ba;
   text-decoration: none;
   font-weight: bold;
 }
 
-.tabLinks {
+.tab-links {
   text-decoration: none;
   cursor: pointer;
   list-style: none;
 }
 
-.tabLinks li {
+.tab-links li {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.tabContent {
-  display: flex;
-  flex-direction: row;
-}
-
-.imageWrapper {
-  position: relative;
-  display: block;
-}
-
-.stepBorder {
+.step-border {
   border: 1px solid silver;
   border-radius: 50%;
 }

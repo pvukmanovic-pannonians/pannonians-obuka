@@ -49,13 +49,13 @@ export default function ThirdSection ({children}) {
         <div className="section3 py-5">
             <h2 className="mt-3 pt-3">PayPal connects buyers and sellers.</h2>
             <div>
-                <ul className="tabLinks d-flex justify-content-center mt-4">
+                <ul className="tab-links d-flex justify-content-center mt-4">
                     <li onClick={() => {
                         setActiveTab('ForBuyers')
-                    }} className={activeTab === 'ForBuyers' ? "active" : 'boldLink'}>For buyers</li>
+                    }} className={activeTab === 'ForBuyers' ? "active" : 'bold-link'}>For buyers</li>
                     <li onClick={() => {
                         setActiveTab('ForSellers')
-                    }} className={activeTab === 'ForSellers' ? "active" : 'boldLink'}>For sellers</li>
+                    }} className={activeTab === 'ForSellers' ? "active" : 'bold-link'}>For sellers</li>
                 </ul>
                 <div className="d-flex">
                     {activeTab === 'ForBuyers' ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}

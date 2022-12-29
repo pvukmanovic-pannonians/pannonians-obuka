@@ -15,7 +15,7 @@ function App() {
         <SecondSection></SecondSection>
         <ThirdSection></ThirdSection>
         <FourthSection></FourthSection>
-        <FifthSection></FifthSection>
+        <FifthSection className="section5"></FifthSection>
       </Layout>       
   )
 }

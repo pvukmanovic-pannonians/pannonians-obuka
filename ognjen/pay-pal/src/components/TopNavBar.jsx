@@ -11,9 +11,9 @@ export default function TopNavBar({children}) {
                 </div>
             </div>
             <ul style={{ width: '100%', height: '100%', textDecoration: 'none', listStyle: 'none', display: 'flex', justifyContent: 'center', marginBottom: 'none'}}>
-                <li className="navBarLink py-4 px-4">Personal <FontAwesomeIcon icon={faAngleDown}/></li>
-                <li className="navBarLink py-4 px-4">Buisness <FontAwesomeIcon icon={faAngleDown}/></li>
-                <li className="navBarLink py-4 px-4">Partners and Developers</li>
+                <li className="nav-bar-link py-4 px-4">Personal <FontAwesomeIcon icon={faAngleDown}/></li>
+                <li className="nav-bar-link py-4 px-4">Buisness <FontAwesomeIcon icon={faAngleDown}/></li>
+                <li className="nav-bar-link py-4 px-4">Partners and Developers</li>
             </ul>            
             <div className='col-2'>
                 <div className='d-flex justify-content-center align-items-center h-100'>
