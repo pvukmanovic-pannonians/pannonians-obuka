@@ -48,23 +48,18 @@ export default function ThirdSection ({children}) {
     return (
         <div className="section3 py-5">
             <h2 className="mt-3 pt-3">PayPal connects buyers and sellers.</h2>
-            {/* <div className="d-flex">
-                <a href="#" className="" selected onClick={() => {}}>For buyers</a>
-                <a href="#" className="" onClick={() => {}}>For sellers</a>
-            </div> */}
             <div>
-            <ul className="tabLinks d-flex justify-content-center mt-4">
-                <li onClick={() => {
-                    setActiveTab('ForBuyers')
-                }} className={activeTab === 'ForBuyers' ? "active" : 'boldLink'}>For buyers</li>
-                <li onClick={() => {
-                    setActiveTab('ForSellers')
-                }} className={activeTab === 'ForSellers' ? "active" : 'boldLink'}>For sellers</li>
-            </ul>
-            <div className="d-flex">
-                {/* <Tab arr={buyers}></Tab>  */}
-                {activeTab === 'ForBuyers' ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}
-            </div> 
+                <ul className="tabLinks d-flex justify-content-center mt-4">
+                    <li onClick={() => {
+                        setActiveTab('ForBuyers')
+                    }} className={activeTab === 'ForBuyers' ? "active" : 'boldLink'}>For buyers</li>
+                    <li onClick={() => {
+                        setActiveTab('ForSellers')
+                    }} className={activeTab === 'ForSellers' ? "active" : 'boldLink'}>For sellers</li>
+                </ul>
+                <div className="d-flex">
+                    {activeTab === 'ForBuyers' ? <Tab1 arr={buyers}></Tab1> : <Tab2 arr={sellers}></Tab2>}
+                </div> 
             </div>
             <Button className='mt-5 py-3 px-5' style={{borderRadius: '30px'}} variant="outline-primary">Learn More</Button>{' '} 
         </div>
