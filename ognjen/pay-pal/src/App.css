@@ -67,3 +67,8 @@
   background-color: #009cde;
   background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 0);
 }
+
+.first-section-button {
+  border-radius: '40px';
+  font-size: '15px'
+}
