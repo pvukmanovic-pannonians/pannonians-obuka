@@ -46,8 +46,8 @@ export default function ThirdSection ({children}) {
         }
     ]
     return (
-        <div className="section3">
-            <h2 className="mt-5 pt-3">PayPal connects buyers and sellers.</h2>
+        <div className="section3 py-5">
+            <h2 className="mt-3 pt-3">PayPal connects buyers and sellers.</h2>
             {/* <div className="d-flex">
                 <a href="#" className="" selected onClick={() => {}}>For buyers</a>
                 <a href="#" className="" onClick={() => {}}>For sellers</a>
