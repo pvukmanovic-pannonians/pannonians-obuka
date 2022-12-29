@@ -10,15 +10,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Layout></Layout>
-      <FirstSection></FirstSection>
-      <SecondSection></SecondSection>
-      <ThirdSection></ThirdSection>
-      <FourthSection></FourthSection>
-      <FifthSection></FifthSection>
-      <Footer></Footer>
-    </> 
+      <Layout>
+        <FirstSection></FirstSection>
+        <SecondSection></SecondSection>
+        <ThirdSection></ThirdSection>
+        <FourthSection></FourthSection>
+        <FifthSection></FifthSection>
+      </Layout>       
   )
 }
 
