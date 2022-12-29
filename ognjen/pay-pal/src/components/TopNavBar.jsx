@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 export default function TopNavBar({children}) {
     return (
-        <div className="topNavBar">
+        <div className="top-nav-bar">
             <div className='col-2'>
                 <div style={{ height: '100%', width: '130px', padding: '10px 0 0 10px' }}>
                     <img style={{ height: '100%', width: '100%' }} src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg" alt="Home" />

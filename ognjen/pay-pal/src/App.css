@@ -37,7 +37,7 @@
   }
 }
 
-.topNavBar {
+.top-nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -53,16 +53,13 @@
 .section1 {
   background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
   background-repeat: no-repeat;
-  height: 475px;
   background-size: cover;
 }
 
 .section2 {
-  height: 475px;
 }
 
 .section3 {
-  height: 600px;
   background-color: #f7f9fa;
   display: flex;
   flex-direction: column;
