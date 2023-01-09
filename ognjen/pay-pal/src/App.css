@@ -1,0 +1,74 @@
+.top-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-bar-link {
+  color: '#2c2e2f';
+  padding: '25px 25px 23px'; 
+  margin: '0 1px';
+  cursor: pointer;
+}
+
+.section1 {
+  background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section4-links {
+  text-decoration: 'none';
+  color: 'white';
+  font-weight: 'bold'
+}
+
+.section3 {
+  background-color: #f7f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-background {
+  background-color: '#f7f9fa' !important;
+}
+
+.active {
+  color: #666666;
+  border-bottom: 1px solid #666666;
+}
+
+.bold-link {
+  color: #0070ba;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tab-links {
+  text-decoration: none;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tab-links li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.step-border {
+  border: 1px solid silver;
+  border-radius: 50%;
+}
+
+.blue {
+  color: #fff;
+  background-color: #009cde;
+  background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 0);
+}
+
+.first-section-button {
+  border-radius: '40px';
+  font-size: '15px'
+}

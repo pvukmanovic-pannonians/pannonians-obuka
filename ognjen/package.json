@@ -1,0 +1,23 @@
+{
+  "name": "ognjen",
+  "version": "1.0.0",
+  "description": "Dalje neces moci!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "arrays": "yarn workspace arrays",
+    "loops": "yarn workspace loops",
+    "react-hello-world": "yarn workspace react-hello-world",
+    "pay-pal": "yarn workspace pay-pal"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "./arrays",
+    "hello-world",
+    "loops",
+    "pay-pal"
+  ]
+}
