@@ -1,10 +1,16 @@
 import './App.css';
+import Routes from './Routes';
+import Navigation from './components/Navigation';
+import Layout from './layouts/Layout';
 
 function App() {
   return (
-    <div className="App">
-      qwe
-    </div>
+    <>
+      <Navigation />
+      <Layout>
+        <Routes />
+      </Layout>
+    </>
   );
 }
 
