@@ -11,4 +11,33 @@ body {
    padding: 0 20px;
 }
 
-  
+.hr {
+  border-top: 1px solid #333;
+  margin-top: 0;
+}
+
+.comment {
+  background-color: #F5F5F5;
+  padding: 10px 0;
+  border:  1px solid #333; 
+  margin: 10px 0 0
+}
+ 
+.commentHeader {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.commentBody {
+  padding: 0 10px
+}
+
+.commentTitle {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.commentEmail {
+  padding: 0 10px;
+  font-size: 10px;
+}
