@@ -1,0 +1,23 @@
+{
+  "name": "ognjen",
+  "version": "1.0.0",
+  "description": "Dalje neces moci!",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ogijev-blog": "yarn workspace ogijev-blog"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "ogijev-blog"
+  ]
+}
