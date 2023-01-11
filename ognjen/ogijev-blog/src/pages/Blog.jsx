@@ -1,4 +1,5 @@
 import { Link} from 'react-router-dom'
+import BlogCard from '../components/BlogCard'
 import useHttp from '../hooks/useHttp'
 
 export default function Blog () {
@@ -8,11 +9,13 @@ export default function Blog () {
             <h3>Blog index</h3>
             {posts && (
                 <>
-                    <ul>
-                       {posts.map((post) => (
-                        <li key={post.id}><Link to={`/blog/${post.id}`}>{post.title}</Link></li>
-                       ))}
-                    </ul>
+                    { posts && posts.map((post) => (
+                        <div className='flex-row' style={{height: '150px'}} key={post.id}>
+                            <Link to={`/blog/${post.id}`} style={{textDecoration: 'none', color: '#333'}}>
+                                    <BlogCard post={post}></BlogCard>
+                                </Link>
+                        </div>
+                    ))}
                 </>
             )}
         </div>
