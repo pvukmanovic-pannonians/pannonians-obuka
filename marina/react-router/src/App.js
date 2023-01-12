@@ -2,7 +2,7 @@ import "./App.css";
 import Routes from "./Routes";
 import Navbar from "./components/Navbar";
 import MainLayout from "./layouts/MainLayout";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <MainLayout>
         <Routes />
       </MainLayout>
+      <Footer />
     </>
   );
 }

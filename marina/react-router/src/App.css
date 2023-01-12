@@ -64,3 +64,19 @@ margin-right: 0%;
   font-weight:bolder;
   font-size: 12px;
 }
+
+.footer {
+  min-height: 100px;
+  background:rgb(116, 134, 50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  color:white;
+}
+
+.home p {
+  display:flex;
+justify-content: center;
+  align-items: center;
+}
