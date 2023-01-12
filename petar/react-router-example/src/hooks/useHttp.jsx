@@ -8,7 +8,7 @@ export default function useHttp(crudOperation = 'index', postId = null) {
   const [postLength, setPostLength] = useState(0);
   useEffect(() => {
     axios.get(endpoints.INDEX).then(({ data }) => {
-      setPosts(data.slice(0, 10));
+      setPosts(data);
     });
   }, []);
 
