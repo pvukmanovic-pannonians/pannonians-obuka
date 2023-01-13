@@ -42,6 +42,9 @@
 
 .comments {
   margin-top: 24px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 24px;
 }
 
 .comments article {
@@ -58,5 +61,5 @@
   display: flex;
   flex-direction: row-reverse;
   font-weight: bolder;
-  font-size: 8px;
+  font-size: 56px;
 }

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Comment from "../components/Comment";
 import useHttp from "../hooks/useHttp";
 
 export default function BlogDetails() {
@@ -42,15 +43,12 @@ export default function BlogDetails() {
           <h1>Comments</h1>
           {comments &&
             comments.map((comment) => (
-              <div className="comments">
-                <div className="name">{comment.name}</div>
-                <article>{comment.body}</article>
-                <div className="user">
-                  <div>
-                    <em>{comment.email}</em>
-                  </div>
-                </div>
-              </div>
+              <Comment
+                key={comment.id}
+                body={comment.body}
+                email={comment.email}
+                name={comment.name}
+              />
             ))}
         </>
       )}
