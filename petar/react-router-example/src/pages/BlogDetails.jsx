@@ -1,5 +1,4 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router";
 import Comment from "../components/Comment";
 import useHttp from "../hooks/useHttp";
@@ -7,26 +6,8 @@ import useHttp from "../hooks/useHttp";
 export default function BlogDetails() {
   const { id } = useParams();
   const { post } = useHttp("show", id);
-  const [comments, setComments] = useState();
-  const [user, setUser] = useState();
-
-  useEffect(() => {
-    if (post) fetchData();
-  }, [post]);
-
-  async function fetchData() {
-    const promises = [
-      axios.get("https://jsonplaceholder.typicode.com/comments"),
-      axios.get("https://jsonplaceholder.typicode.com/users"),
-    ];
-
-    const [{ data: commentsData }, { data: usersData }] = await Promise.all(
-      promises
-    );
-
-    setComments(commentsData.filter((c) => c.postId === post.id));
-    setUser(usersData.find((u) => post.userId === u.id));
-  }
+  const comments = useSelector((state) => state.blog.comments)?.[id]
+  const user = useSelector((state) => state.blog.users)?.find((u) => post?.userId === u.id)
 
   return (
     <div className="blog-details">
