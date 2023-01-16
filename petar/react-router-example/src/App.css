@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .nav {
@@ -38,4 +38,28 @@
 .blog-details {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.comments {
+  margin-top: 24px;
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.comments article {
+  color: #333;
+  font-size: 12px;
+}
+
+.comments .name {
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.comments .user {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: bolder;
+  font-size: 56px;
 }
