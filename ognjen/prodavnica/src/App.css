@@ -15,12 +15,12 @@
   padding: 0 20px;
 }
 
-.navigationBar ul li:hover {
-  border-bottom: 1px solid white;
-  transition: ease-in;
-}
-
 .navigationBar ul li a {
   color: white;
   text-decoration: none;
+}
+
+.navigationBar ul li a:hover {
+  border-bottom: 1px solid white;
+  color: rgb(224, 224, 23);
 }
