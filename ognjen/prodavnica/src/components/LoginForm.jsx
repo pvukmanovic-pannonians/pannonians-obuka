@@ -30,19 +30,19 @@ export default function LoginForm () {
 
     return  (
         <div className="Form">
-            {isSubmitted ? <div>User succesfully loged in</div> :  <form onSubmit={handleLogin}>
-                <div className="">
+            {isSubmitted ? <div>User succesfully loged in</div> :  <form className="loginForm" onSubmit={handleLogin}>
+                <div className="formSection">
                     <label>Username</label>
-                    <input type="text" name="uname"/>
+                    <input type="text" name="uname" className="formInputField"/>
                     {errorMessage('uname')}
                 </div>
-                <div className="">
+                <div className="formSection">
                     <label>Password</label>
-                    <input type="passowrd" name="pass" />
+                    <input type="passowrd" name="pass" className="formInputField" />
                     {errorMessage('pass')}
                 </div>
                 <div className="">
-                    <input type="submit" />
+                    <input type="submit" className="submitButton" />
                 </div>
             </form>}
         </div>
