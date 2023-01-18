@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { useSelector } from "react-redux"
 import axios from 'axios'
+import { useDispatch } from "react-redux";
+import { currentUser } from "../store/features/users";
 
 export default function LoginForm () {
     const [errorMessages, setErrorMessage] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [userName, setUserName] = useState()
     const [userPassword, setUserPassword] = useState()
+    const dispatch = useDispatch()
 
     const renderErrorMessage = (name) => {
         name === errorMessages.name && (<div className="error">{errorMessages.message}</div>)
@@ -22,6 +25,7 @@ export default function LoginForm () {
         const { uname, password } = document.forms[0]
         console.log('event', event.target);
         const userData = usersDatabase.find(user => user.username === uname.value)
+        dispatch(currentUser(userData))
         await axios.post('https://dummyjson.com/auth/login', {
             username: userName,
             password: userPassword
