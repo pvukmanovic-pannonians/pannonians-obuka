@@ -25,11 +25,12 @@ export default function LoginForm () {
         const { uname, password } = document.forms[0]
         console.log('event', event.target);
         const userData = usersDatabase.find(user => user.username === uname.value)
-        dispatch(currentUser(userData))
-        await axios.post('https://dummyjson.com/auth/login', {
+        // dispatch(currentUser(userData))
+       const data =  await axios.post('https://dummyjson.com/auth/login', {
             username: userName,
             password: userPassword
         })
+        dispatch(currentUser(data))
         
         if (userData) {
             if (userData.password !== password.value) {
