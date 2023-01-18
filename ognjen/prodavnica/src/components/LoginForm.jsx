@@ -3,8 +3,8 @@ export default function LoginForm () {
     const [errorMessages, setErrorMessage] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const errorMessage = (name) => {
-        name === errorMessage.name && (<div className="error">{errorMessage.message}</div>)
+    const renderErrorMessage = (name) => {
+        name === errorMessages.name && (<div className="error">{errorMessages.message}</div>)
     }
     const usersDatabase = []
     const errors = {
@@ -34,12 +34,12 @@ export default function LoginForm () {
                 <div className="formSection">
                     <label>Username</label>
                     <input type="text" name="uname" className="formInputField"/>
-                    {errorMessage('uname')}
+                    {renderErrorMessage('uname')}
                 </div>
                 <div className="formSection">
                     <label>Password</label>
                     <input type="password" name="password" className="formInputField" />
-                    {errorMessage('password')}
+                    {renderErrorMessage('password')}
                 </div>
                 <div className="">
                     <input type="submit" className="submitButton" />
