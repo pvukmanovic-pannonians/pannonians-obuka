@@ -6,7 +6,7 @@ import Login from './pages/Login';
 export default function Routes () {
     return (
         <BaseRoutes>
-            <Route path="/" element={<LandingPage />}>Home</Route>
+            <Route path="/" element={<LandingPage />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/about' element={<About />}></Route>
         </BaseRoutes>
