@@ -19,7 +19,7 @@ export default function LoginForm () {
         
         if (userData) {
             if (userData.password !== pass.value) {
-                setErrorMessage({name: 'pass', message: errors.pass})
+                setErrorMessage({name: 'password', message: errors.pass})
             } else {
                 setIsSubmitted(true)
             }
@@ -38,8 +38,8 @@ export default function LoginForm () {
                 </div>
                 <div className="formSection">
                     <label>Password</label>
-                    <input type="passowrd" name="pass" className="formInputField" />
-                    {errorMessage('pass')}
+                    <input type="password" name="password" className="formInputField" />
+                    {errorMessage('password')}
                 </div>
                 <div className="">
                     <input type="submit" className="submitButton" />
