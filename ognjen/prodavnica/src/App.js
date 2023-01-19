@@ -14,7 +14,6 @@ function App() {
           <Routes></Routes>
         </MainLayout>
       </Provider>
-   
     </>   
   );
 }
