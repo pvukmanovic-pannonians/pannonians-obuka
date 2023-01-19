@@ -1,0 +1,46 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 24px 0;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar li {
+  padding-right: 48px;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px 10px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.logIn {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
