@@ -4,9 +4,7 @@
 }
 
 .nav {
-  background: rgb(190, 170, 206);
-  color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   padding: 24px 0;
 }
@@ -31,4 +29,18 @@
 
 .main {
   padding: 20px 10px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+}
+
+.logIn {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
 }
