@@ -17,7 +17,8 @@
     "variables": "yarn workspace variables", 
     "loops": "yarn workspace loops", 
     "tasks": "yarn workspace tasks", 
-    "react-hello-world": "yarn workspace react-hello-world"
+    "react-hello-world": "yarn workspace react-hello-world", 
+    "prodavnica": "yarn workspace prodavnica"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "./variables", 
     "./loops", 
     "./tasks", 
-    "./hello-world"
+    "./hello-world", 
+    "./prodavnica"
   ]
 }
