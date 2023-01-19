@@ -18,7 +18,9 @@
     "loops": "yarn workspace loops",
     "tasks": "yarn workspace tasks",
     "react-hello-world": "yarn workspace react-hello-world",
-    "react-paypal_clone": "yarn workspace react-paypal_clone"
+    "react-paypal_clone": "yarn workspace react-paypal_clone",
+    "prodavnica": "yarn workspace prodavnica"
+
   },
   "keywords": [],
   "author": "",
@@ -38,6 +40,7 @@
     "./loops",
     "./tasks",
     "./hello-world",
-    "./paypal_clone"
+    "./paypal_clone",
+    "./prodavnica"
   ]
 }
