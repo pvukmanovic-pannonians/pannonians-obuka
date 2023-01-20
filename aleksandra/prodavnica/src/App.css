@@ -1,12 +1,8 @@
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .nav {
-  font-size: 16px;
+  font-size: 20px;
+  color: rgb(86, 86, 160);
   font-weight: bold;
-  padding: 24px 0;
+  padding: 48px 0;
 }
 
 .navbar {
@@ -23,12 +19,7 @@
 }
 
 .navbar li:hover {
-  text-decoration: underline;
   cursor: pointer;
-}
-
-.main {
-  padding: 20px 10px;
 }
 
 .home {
@@ -38,9 +29,50 @@
   justify-content: center;
 }
 
-.logIn {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  justify-content: center;
+.logIn-form {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+  opacity: 99%;
+  max-width: 260px;
+  margin: 200px auto 100px;
+  padding: 10px 45px 30px 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+
+.logIn-input {
+  outline: 0;
+  border-radius: 10px;
+  background: rgb(219, 219, 248);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box; 
+  font-size: 14px;
+}
+
+.logIn-input:hover {
+  background-color: rgb(177, 177, 224); 
+  transition: all 1s ease 0s;
+}
+
+.logIn-button {
+  outline: 0;
+  border-radius: 10px;
+  background: rgb(174, 174, 221);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logIn-button:hover, .logIn-button:active, .logIn-button:focus {
+  background-color: rgb(140, 140, 206);
+  transition: all 1s ease 0s;
 }

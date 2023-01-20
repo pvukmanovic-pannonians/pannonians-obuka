@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="wrapper">
+    <div>
       <Navbar />
-      <div className="main">{children}</div>
+      <div>{children}</div>
     </div>
   );
 };

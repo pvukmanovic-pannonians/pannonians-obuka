@@ -21,12 +21,12 @@ export default function LogIn() {
     console.log("Username", { username }, password, { password });
 
     return (
-      <div className="logIn">
-        <form onSubmit={handleSubmit}>
+      <div >
+        <form onSubmit={handleSubmit} className="logIn-form">
+            <p>Log In</p>
             <label className="logIn-label">
-                Username: 
                 <input
-                    className="flex username"
+                    className="logIn-input"
                     type="text"
                     value={username}
                     placeholder="username"
@@ -35,9 +35,8 @@ export default function LogIn() {
             </label>
             <br />
             <label>
-                Password: 
                 <input
-                    className="username"
+                    className="logIn-input"
                     type="password"
                     value={password}
                     placeholder="password"
@@ -45,7 +44,11 @@ export default function LogIn() {
                 />
             </label>
             <br />
-            <button onClick={(e) => postData()} type="submit">Log In</button>
+            <button 
+                    className="logIn-button"
+                    onClick={(e) => postData()} 
+                    type="submit"> Log In
+            </button>
         </form>
       </div>
     );
