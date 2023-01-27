@@ -1,21 +1,30 @@
 import { useState } from "react";
+import {useNavigate}  from "react-router-dom";
 import axios from "axios";
 import { addUser } from "../store/features/user";
 import { endpoints } from "../http/client";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
 
 export default function LogIn() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
+  const users = useSelector((state) => state.user)
+  console.log('lista usera', users)
+
   async function postData() {
-    const { data } = await axios.post(endpoints.INDEX, {
+    await axios.post(endpoints.INDEX, {
       username: username,
       password: password,
-    });
-    dispatch(addUser(data));
+    }).then((response) => dispatch(addUser(response.data)));
+    if(users)
+    navigate('/store');
+    else alert('user is not registered')
   }
 
   function handleSubmit(event) {

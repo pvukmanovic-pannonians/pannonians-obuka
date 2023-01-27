@@ -10,7 +10,10 @@ export default function Navbar() {
         <li>
           <Link to="/LogIn">LogIn</Link>
         </li>
-      </ul>
+        <li>
+          <Link to="/Store">Store</Link>
+        </li>
+        </ul>
     </nav>
   );
 }
