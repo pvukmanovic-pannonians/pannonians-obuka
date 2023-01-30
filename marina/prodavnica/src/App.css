@@ -1,0 +1,109 @@
+.full {
+ /* height: calc(100vh - 50px);*/
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0%;
+  margin:0%;
+}
+
+.nav ul li {
+  display: inline;
+  margin-right: 28px;
+}
+
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.flex {
+  justify-content: center;
+ }
+
+.username {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.password {
+  margin-left: 5px;
+}
+
+button {
+  background-color: #070707;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.product-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.filter-container {
+  
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+.product {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+img {
+  margin-right: 20px;
+}
+
+
