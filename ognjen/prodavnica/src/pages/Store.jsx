@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { allProducts } from '../store/features/products'
+import Product from '../components/Product'
 
 export default function Store () {
     const dispatch = useDispatch()
@@ -22,7 +23,8 @@ export default function Store () {
            {products.map((product, id) => {
             return (
                 <li key={id}>
-                    <div>{product.title}</div>
+                    <Product product={product}></Product>
+                    {/* <div>{product.title}</div>
                     <div>{product.description}</div>
                     <div>{product.price}</div>
                     <div>{product.discountpercentage}</div>
@@ -31,7 +33,7 @@ export default function Store () {
                     <div>{product.brand}</div>
                     <div>{product.category}</div>
                     <div>{product.thumbnail}</div>
-                    <div>{product.images}</div>
+                    <div>{product.images}</div> */}
                 </li>
             )
            })}
