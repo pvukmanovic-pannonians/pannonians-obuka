@@ -2,6 +2,7 @@ import { Route, Routes as BaseRoutes } from 'react-router';
 import About from './pages/About';
 import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
+import Store from './pages/Store'
 import { useDispatch } from "react-redux";
 import { useEffect } from 'react';
 import axios from 'axios'
@@ -24,6 +25,7 @@ export default function Routes () {
             <Route path="/" element={<LandingPage />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/about' element={<About />}></Route>
+            <Route path='store' element={<Store />}></Route>
         </BaseRoutes>
     )
 }
