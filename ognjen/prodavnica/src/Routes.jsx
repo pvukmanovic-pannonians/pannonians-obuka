@@ -25,7 +25,7 @@ export default function Routes () {
             <Route path="/" element={<LandingPage />}></Route>
             <Route path='/login' element={<Login />}></Route>
             <Route path='/about' element={<About />}></Route>
-            <Route path='store' element={<Store />}></Route>
+            <Route path='/store' element={<Store />}></Route>
         </BaseRoutes>
     )
 }
