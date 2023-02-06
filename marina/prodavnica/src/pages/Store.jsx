@@ -1,12 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { endpoints } from "../http/client";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../store/features/cart";
 
 export default function Store() {
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");  
+  const dispatch = useDispatch();
 
-useEffect(() => {
+  const handleAddToCart = (product) =>{
+
+    dispatch(addToCart(product));
+  }
+
+  useEffect(() => {
     axios.get(endpoints.SHOW).then((response) => {
       console.log("lista", response.data.products);
       const products = response.data.products;
@@ -68,6 +76,9 @@ useEffect(() => {
                   alt={product.title}
                 />
               ))}
+            </div>
+            <div>
+              <button onClick= {() => handleAddToCart(product)}>Add To Cart</button>
             </div>
           </div>
         ))}
