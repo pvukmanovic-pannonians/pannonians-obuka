@@ -176,3 +176,24 @@ button.remove {
   width: 1.5rem;
   color: white;
 }
+
+.emptyCart {
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.cartBadge {
+  background-color: #4CAF50;
+  color: white;
+  padding: .2rem .5rem;
+  border-radius: 20%;
+  margin-right: 5px;
+}
+
+.shopingCart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

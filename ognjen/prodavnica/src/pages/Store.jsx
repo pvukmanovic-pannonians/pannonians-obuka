@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { allProducts } from '../store/features/products'
+import { allProducts, changeCartItems, removeCartItems } from '../store/features/products'
 import Product from '../components/Product'
 
 export default function Store () {
@@ -25,20 +25,23 @@ export default function Store () {
         if (exist) {
             const newCartItems = cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty + 1} : x)
             setCartItems(newCartItems)
+            dispatch(changeCartItems(newCartItems))
         } else {
             const newCartItems = [...cartItems, {...product, qty: 1}]
-            setCartItems(newCartItems)
+            setCartItems(newCartItems)  
+            dispatch(changeCartItems(newCartItems))
         }
-        console.log('cart items', cartItems);
     }
     const onRemove = (product) => {
         const exist = cartItems.find(item => item.id === product.id)
         if (exist.qty === 1) {
             const newCartItems = cartItems.filter(item => item.id !== product.id)
             setCartItems(newCartItems)
+            dispatch(removeCartItems(product))
         } else {
             const newCartItems = cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty - 1} : x)
             setCartItems(newCartItems) 
+            dispatch(changeCartItems(newCartItems))
         }
     }
     
