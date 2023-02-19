@@ -12,15 +12,6 @@ export default function NavigationBar () {
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/login'>Login</Link></li>
                 <li><Link to="/store" style={!user.id ? {pointerEvents: 'none'} : {}}>Store</Link></li>
-                {/* <li><Link to='/cart'>Cart {} item(s)</Link></li> */}
-                {/* {user && (<div className="userProfile">
-                    <div className="userAvatar">
-                        <img src={user.data.image} alt="" className="avatarImage" />
-                    </div>
-                    <div>
-                        <span>{user.data.firstName} {user.data.lastName}</span>
-                    </div>
-                </div>)} */}
                 <ShoppingCart></ShoppingCart>
             </ul>
             

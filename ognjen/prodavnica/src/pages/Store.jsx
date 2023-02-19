@@ -12,7 +12,6 @@ export default function Store () {
 
     async function fetchProducts() {
         const { data } = await axios.get('https://dummyjson.com/products')
-        console.log('data', data);
         dispatch(allProducts(data.products))
     }
 
