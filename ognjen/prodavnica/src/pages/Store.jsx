@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { allProducts } from '../store/features/products'
 import Product from '../components/Product'
@@ -17,23 +17,38 @@ export default function Store () {
     }
 
     const products = useSelector(state => state.products.allProducts)
+    const [cartItems, setCartItems] = useState([])
+    const onAdd = (product) => {
+        console.log('product', product);
+        const exist = cartItems.find(item => item.id === product.id)
+        console.log('exist', exist);
+        if (exist) {
+            const newCartItems = cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty + 1} : x)
+            setCartItems(newCartItems)
+        } else {
+            const newCartItems = [...cartItems, {...product, qty: 1}]
+            setCartItems(newCartItems)
+        }
+        console.log('cart items', cartItems);
+    }
+    const onRemove = (product) => {
+        const exist = cartItems.find(item => item.id === product.id)
+        if (exist.qty === 1) {
+            const newCartItems = cartItems.filter(item => item.id !== product.id)
+            setCartItems(newCartItems)
+        } else {
+            const newCartItems = cartItems.map(x => x.id === product.id ? {...exist, qty: exist.qty - 1} : x)
+            setCartItems(newCartItems) 
+        }
+    }
+    
 
     return (
-        <div>
+        <div className="allProducts">
            {products.map((product, id) => {
             return (
-                <li key={id}>
-                    <Product product={product}></Product>
-                    {/* <div>{product.title}</div>
-                    <div>{product.description}</div>
-                    <div>{product.price}</div>
-                    <div>{product.discountpercentage}</div>
-                    <div>{product.rating}</div>
-                    <div>{product.stock}</div>
-                    <div>{product.brand}</div>
-                    <div>{product.category}</div>
-                    <div>{product.thumbnail}</div>
-                    <div>{product.images}</div> */}
+                <li key={id} >
+                    <Product product={product} onAdd={onAdd} onRemove={onRemove} item={cartItems.find(x => x.id === product.id)}></Product>
                 </li>
             )
            })}

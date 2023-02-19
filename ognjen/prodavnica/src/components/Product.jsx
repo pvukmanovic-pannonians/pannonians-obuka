@@ -1,4 +1,5 @@
-export default function Product ({product}) {
+export default function Product (props) {
+    const { onAdd, onRemove, product, item } = props
     return (
         <div className="productCard">
             <div className="imgBox">
@@ -6,7 +7,21 @@ export default function Product ({product}) {
             </div>
             <div className="contentBox" style={{marginTop: '20px'}}>
                 <h3 style={{margin: '0'}}>{product.title}</h3>
-                <h2 style={{margin: '0'}}>{product.price}</h2>
+                <p style={{margin: '0'}}>Price: {product.price}$</p>
+                <p style={{margin: '0'}}>In stock: {product.stock}</p>
+                <p style={{margin: '0'}}>Brand: {product.brand}</p>
+                <p style={{margin: '0'}}>Category: {product.category}</p>
+                {/* <p style>{product.discountpercentage}</p> */}
+                {/* {product.discount && (} */}
+                <p>{product.rating}</p>
+                <div>
+                    {item ? <div>
+                        <button onClick={() => onRemove(item)} className="remove"> - </button>
+                        <span> {item.qty} </span>
+                        <button onClick={() => {onAdd(item)}} className="add"> + </button>
+                    </div> : <button onClick={() => onAdd(product)}>Add to cart</button>}
+                    
+                </div>
             </div>
         </div>
     )
